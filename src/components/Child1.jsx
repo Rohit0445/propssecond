@@ -12,16 +12,42 @@
 // export default Child1
 
 
-function Child2({userinfo}){
+import Child2 from './Child2'
+
+
+
+// function Child1({userinfo}){
+//     return(
+//         <>
+//         <h1>This is Child 1</h1>
+//         <h1>{userinfo.name}</h1>
+//         <h1>{userinfo.age}</h1>
+//         <h1>{userinfo.city}</h1> 
+
+       
+
+        
+//         </>
+//     )
+// }
+
+
+  
+function Child1({name}){
     return(
         <>
-        <h1>This is Child 1</h1>
-        <h1>{userinfo.name}</h1>
-        <h1>{userinfo.age}</h1>
-        <h1>{userinfo.city}</h1>
+        <h1>This is Child 1 {name}</h1>
+        <Child2 name = {name}/>
+      
+
+       
+
+        
         </>
     )
 }
 
-export default Child2
+
+
+export default Child1
 

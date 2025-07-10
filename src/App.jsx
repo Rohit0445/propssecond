@@ -1,5 +1,6 @@
 import Child1 from './components/Child1'
-import Child2 from './components/Child2'
+// import Child2 from './components/Child2'
+
 
 
 
@@ -14,7 +15,9 @@ import Child2 from './components/Child2'
 //   return(
 //     <>
 //     <h1>Hell !</h1>
-//     <Child1 userinfo={info} />
+//     <Child1 userinfo={info}/>
+//     <Child2 userinfo1={{...info}} />
+    
     
 //     </>
 //   )
@@ -25,18 +28,18 @@ import Child2 from './components/Child2'
 
 
 
+
 function App(){
 
-  let info = {
-    name:"Rohit",
-    age : 24,
-    city : "Bhopal"
-  }
+  let fname = "Vikash"
   return(
     <>
     <h1>Hell !</h1>
-    <Child1 userinfo={info} />
-    <Child2 userinfo1={{...info}} />
+    <Child1 name = {fname} />
+
+
+    {/* <Child2 userinfo1={{...info}} /> */}
+    
     
     </>
   )
